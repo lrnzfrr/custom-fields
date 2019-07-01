@@ -34,6 +34,7 @@ class CustomFieldsTable extends Table
         $this->setTable('custom_fields');
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
+        $this->addBehavior('Timestamp');
     }
 
     /**
