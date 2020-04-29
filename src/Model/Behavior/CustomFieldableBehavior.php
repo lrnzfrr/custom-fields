@@ -31,7 +31,7 @@ class CustomFieldableBehavior extends Behavior
      */
     public function initialize(array $config)
     {
-        $this->bindAssociations();
+        $this->customFieldsbindAssociations();
     }
 
     /**
@@ -39,7 +39,7 @@ class CustomFieldableBehavior extends Behavior
      * not already been configured.
      * @return void
      */
-    public function bindAssociations()
+    public function customFieldsbindAssociations()
     {
         $table = $this->_table;
         if ($this->getConfig('connection_key') == 'table') {
